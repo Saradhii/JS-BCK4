@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(
     cors({
-      origin: ["http://localhost:3000","https://harmonious-clafoutis-0cfde6.netlify.app"],
+      origin: ["http://localhost:3000","https://loquacious-blini-e7355a.netlify.app"],
     })
   );
 app.use("/static",express.static("./Documents"));
@@ -20,7 +20,7 @@ app.use("/user",UserRoute);
 
 //testing
 app.get("/",(req,res)=>{
-  res.send("Mock11 working....")
+  res.send("91 mobile backend working....")
 })
 
 // starting the server && checking db connection
