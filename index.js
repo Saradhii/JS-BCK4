@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(
     cors({
-      origin: ["http://localhost:3000","https://loquacious-blini-e7355a.netlify.app"],
+      origin: ["http://localhost:3000","https://loquacious-blini-e7355a.netlify.app","https://e12.vercel.app"],
     })
   );
 app.use("/static",express.static("./Documents"));
